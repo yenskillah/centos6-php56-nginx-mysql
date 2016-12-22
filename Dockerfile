@@ -18,7 +18,7 @@ RUN yum -y install mysql-server mysql-client
 RUN yum -y install nginx
 
 # Installing other utilities
-RUN yum -y install git software-properties-common zip
+RUN yum -y install git software-properties-common zip unzip
 
 # Other configs / timezone, short tags, etc
 COPY settings/php.d /etc/php.d
