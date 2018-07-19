@@ -24,5 +24,5 @@ RUN yum -y install git software-properties-common zip unzip
 COPY settings/php.d /etc/php.d
 
 # Adding the configuration file of the nginx
-COPY settings/nginx/conf.d /etc/nginx/conf.d
-ADD  settings/nginx/nginx.conf /etc/nginx/nginx.conf
+# COPY settings/nginx/conf.d /etc/nginx/conf.d
+# ADD  settings/nginx/nginx.conf /etc/nginx/nginx.conf
