@@ -22,7 +22,7 @@ RUN yum install -y python-setuptools
 RUN easy_install pip
 
 # Installing supervisord
-RUN pip install supervisor
+RUN easy_install supervisor
 
 # Installing other utilities
 RUN yum -y install git software-properties-common zip unzip
