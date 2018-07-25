@@ -27,5 +27,8 @@ RUN pip install supervisor
 # Installing other utilities
 RUN yum -y install git software-properties-common zip unzip
 
+# Installing composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
+
 # Other configs / timezone, short tags, etc
 COPY settings/php.d /etc/php.d
