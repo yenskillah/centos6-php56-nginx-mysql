@@ -17,6 +17,9 @@ RUN yum -y install mysql-server mysql-client
 # Installing nginx 
 RUN yum -y install nginx
 
+# Installing supervisord 
+RUN yum -y install supervisord
+
 # Installing other utilities
 RUN yum -y install git software-properties-common zip unzip
 
